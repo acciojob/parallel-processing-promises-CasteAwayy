@@ -29,7 +29,7 @@ btn.addEventListener("click", () => {
   ])
     .then((values) => {
       values.forEach((image) => {
-        output.insertAdjacentElement("afterbegin", image);
+        output.insertAdjacentElement("beforeend", image);
       });
     })
     .catch((error) => {
